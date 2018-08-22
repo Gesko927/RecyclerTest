@@ -38,7 +38,6 @@ public class NetworksUtils {
     }
 
     public static String getPersonsRequest(URL url){
-        InputStream inputStream = null;
         String result = "";
         try {
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
