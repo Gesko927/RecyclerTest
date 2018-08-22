@@ -1,4 +1,4 @@
-package com.example.jetsoftpro.recyclertest.feature;
+package com.example.jetsoftpro.recyclertest.feature.Models;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "fname",
         "lname"
 })
-class Person {
+public class Person {
 
     @JsonProperty("fname")
     private String firstName;
