@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements RecyclerAdapter.ListItemClickListener {
 
@@ -61,6 +62,6 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.L
 
     @Override
     public void OnClick(Person selectedPerson) {
-
+        Toast.makeText(this, new StringBuilder().append(selectedPerson.getFirstName()).append("").append(selectedPerson.getLastName()).toString(), Toast.LENGTH_SHORT).show();
     }
 }
